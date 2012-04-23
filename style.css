@@ -56,6 +56,11 @@ a{
 	font-family: "宋体";
 	color:#FFF;
 }
+.hoverItem {
+	background:url(images/hover_bg.gif) no-repeat center;
+	display: block;
+	overflow: hidden;
+}
 .footer .comment{
 	padding-top:20px;
 	padding-bottom:70px;
@@ -160,7 +165,7 @@ a{
 .rightHeader span{
 	float: right;
 }
-.links li{
+.rightlinks li{
 	display: block;
 	text-align: justify;
 	line-height: 24px;
@@ -169,7 +174,7 @@ a{
 	overflow: hidden;
 	background: url(images/deshed_03.gif) repeat-x left bottom
 }
-.links li a {
+.rightlinks li a {
 	padding:0px 0px 0px 15px;
 	float: left;
 	background: url(images/li_icon.gif) no-repeat 5px 10px;
@@ -179,4 +184,30 @@ a{
 	margin-top:20px;
 	width: 266px;
 	height: 78px;
+}
+.textArea{
+	padding: 20px 0px 40px 5px;
+}
+.textHeader{
+	background: #EFF3F8 left;
+	float: left;
+	width: 700px;
+	height: 25px;
+	margin-left: 10px;
+}
+.textHeader h3 {
+	color: #0045A5;
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 5px 0px 0px 20px;
+	margin-left: 20px;
+}
+.textContent{
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: 14px;
+	color: #666;
+	text-align: justify;
+	line-height: 180%;
 }
