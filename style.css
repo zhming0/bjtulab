@@ -39,7 +39,7 @@ a{
 .topMenu ul li {
 	float: left;
 	display: inline;
-	margin-left: 40px;
+	margin-left: 55px;
 	padding-top: 7px;
 	font-size: 18px;
 	font-weight: bold;
@@ -51,4 +51,10 @@ a{
 	text-align:center;
 	color:#999;
 	font-size:13px;
+}
+.rightBar{
+	background:url(/images/r_bg.gif);
+	float: right;
+	width: 270px;
+	height: 100%;
 }
