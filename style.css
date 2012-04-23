@@ -17,20 +17,21 @@ a{
 	width:1000px;
 	text-align:left;
 }
-.footer{
+.footer .nav{
 	background:url(images/footer_navbg.gif);
 	height:33px;
 	line-height:33px;
 	text-align:center;
 	color:#FFF;
+	font-size:13px;
+	font-family:arial;
 }
-.footer a{
+.footer .nav a{
 	color:#FFF;
 }
 .topMenu{
 	background:url(images/nav_bg.gif);
 	height: 37px;
-	width: 950px;
 }
 .header{
 
@@ -43,4 +44,11 @@ a{
 	font-size: 18px;
 	font-weight: bold;
 	font-family: "宋体";
+}
+.footer .comment{
+	padding-top:20px;
+	padding-bottom:70px;
+	text-align:center;
+	color:#999;
+	font-size:13px;
 }
