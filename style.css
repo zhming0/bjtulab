@@ -51,15 +51,17 @@ a{
 	cursor: pointer;
 	float: left;
 	display: inline;
-	margin-left: 55px;
 	font-size: 15px;
 	font-weight: bold;
 	font-family: "宋体";
 	color:#FFF;
+	width:137px;
+	text-align:center;
 }
 .hoverItem {
+	width:137px;
 	background:url(images/hover_bg.gif) no-repeat center bottom;
-	height: 90%;
+	height: 100%;
 	display: block;
 	overflow: hidden;
 }
@@ -206,28 +208,29 @@ a{
 	height: 78px;
 }
 .textArea{
-	padding: 20px 0px 40px 5px;
+	padding: 10px 0px 40px 0px;
 }
 .textHeader{
 	background: #EFF3F8 left;
 	float: left;
 	width: 700px;
-	height: 25px;
-	margin-left: 10px;
+	line-height:40px;
+	margin-left: 0px;
 }
 .textHeader h3 {
 	color: #0045A5;
 	display: block;
 	font-weight: bold;
 	font-size: 16px;
-	margin: 5px 0px 0px 20px;
+	padding:0;
+	margin: 0;
 	margin-left: 20px;
 }
 .textContent{
-	margin-top: 40px;
+	padding-top: 40px;
 	margin-left: 20px;
 	font-size: 14px;
 	color: #666;
 	text-align: justify;
-	line-height: 180%;
+	line-height: 1.2em;
 }
