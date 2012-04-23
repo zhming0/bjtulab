@@ -94,14 +94,14 @@ a{
 	background:url(images/more.gif) no-repeat center center;
 }
 .news .content{
-	background:url(images/news_bg.gif);
+	background:url(images/news_bg.gif) no-repeat;
 	height:200px;
 }
 .news .content .image{
 	margin-top:10px;
 	margin-left:10px;
 	float:left;
-	width:230px;
+	width:250px;
 	height:180px;
 	overflow:hidden;
 	position:relative;
@@ -109,15 +109,30 @@ a{
 .news .content .links{
 	margin-top:10px;
 	margin-right:15px;
-	width:430px;
+	width:410px;
 	height:180px;
 	float:right;
 }
+
 .news .content .links a{
 	display:block;
 	color:#667;
 	background: url(images/li_icon.gif) no-repeat center left;
-	padding-left:7px;
+	padding-left:15px;
+	background-position-x:3px;
+	line-height:24px;
+	height:24px;
+}
+.news .content .links a:hover{
+	color:#447;
+	text-decoration:underline;
+}
+.news  .content .image img{
+	width:250px;
+	height:180px;
+	position:absolute;
+	left:0;
+	top:0;
 }
 .slideShow{
 	height:250px;
