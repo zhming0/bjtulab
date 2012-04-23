@@ -30,6 +30,22 @@ a{
 	color:#FFF;
 	padding:0 10px;
 }
+.topMenu{
+	background:url(images/nav_bg.gif);
+	height: 37px;
+}
+.header{
+
+}
+.topMenu ul li {
+	float: left;
+	display: inline;
+	margin-left: 55px;
+	padding-top: 7px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "宋体";
+}
 .footer .comment{
 	padding-top:20px;
 	padding-bottom:70px;
@@ -80,4 +96,10 @@ a{
 	height:180px;
 	float:right;
 	background:#000;
+}
+.rightBar{
+	background:url(/images/r_bg.gif);
+	float: right;
+	width: 270px;
+	height: 100%;
 }
