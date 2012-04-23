@@ -7,6 +7,9 @@ ul{
 	margin:0;
 	padding:0;
 }
+a{
+	text-decoration:none;
+}
 .shadowbg{
 	background:url(images/page_shadow.png) repeat-y top center;
 }
@@ -16,4 +19,11 @@ ul{
 }
 .footer{
 	background:url(images/footer_navbg.gif);
+	height:33px;
+	line-height:33px;
+	text-align:center;
+	color:#FFF;
+}
+.footer a{
+	color:#FFF;
 }
