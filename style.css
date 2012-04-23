@@ -48,6 +48,7 @@ a{
 	overflow-x:hidden;
 }
 .topMenu ul li {
+	cursor: pointer;
 	float: left;
 	display: inline;
 	margin-left: 55px;
@@ -57,7 +58,8 @@ a{
 	color:#FFF;
 }
 .hoverItem {
-	background:url(images/hover_bg.gif) no-repeat center;
+	background:url(images/hover_bg.gif) no-repeat center bottom;
+	height: 90%;
 	display: block;
 	overflow: hidden;
 }
