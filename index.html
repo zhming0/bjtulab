@@ -5,6 +5,8 @@
 				var ss=$('#slideShow');
 				var si=ss.find('img');
 				var hh=ss.height();
+				si.attr('width',ss.width());
+				si.attr('height',si.height());
 				si.css({top:-hh});
 				$(si[0]).css({top:0});
 				si=si.toArray();
@@ -19,7 +21,8 @@
 				},7000);
 				var newsL=$('#newsLinks a');
 				var newsI=$('#newsImages img');
-				newsI.hide();
+				var nw=newsI.width();
+				newsI.css({left:nw});
 				var prev=-1;
 				var newsC=newsI.length;
 				var pause=0;
@@ -28,13 +31,14 @@
 						return;
 					lasting=700;
 					if(prev!=-1){
-						$(newsI[prev]).stop(true,true);
-						$(newsI[prev]).fadeOut(lasting,'linear');
+						$(newsI[prev]).stop(true,false);
+						$(newsI[prev]).animate({left:-nw},lasting,'linear');
 						$(newsL[prev]).css({backgroundImage:'url(images/li_icon.gif)',backgroundPositionX:'3px'});
 					}else
 						lasting=0;
-					$(newsI[num]).stop(true,true);
-					$(newsI[num]).fadeIn(lasting-100,'linear');
+					$(newsI[num]).stop(true,false);
+					$(newsI[num]).css({left:nw});
+					$(newsI[num]).animate({left:0},lasting,'linear');
 					$(newsL[num]).css({backgroundImage:'url(images/arrow.gif)',backgroundPositionX:0});
 					prev=num;
 				}
