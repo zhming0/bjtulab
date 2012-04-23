@@ -127,8 +127,44 @@ a{
 	top:0;
 }
 .rightBar{
-	background:url(/images/r_bg.gif);
+	background:url(images/r_bg.gif);
 	float: right;
 	width: 270px;
-	height: 100%;
+}
+.rightHeader{
+	background:url(images/tit_03.gif) no-repeat left top;
+	overflow: hidden;
+	margin-top:8px;
+	height : 35px;
+	width : 265px
+}
+.rightHeader h3{
+	color: white;
+	display: block;
+	float: left;
+	font-size: 16px;
+	padding : 10px 0px 0px 15px;
+	margin: 0;
+}
+.rightHeader span{
+	float: right;
+}
+.links li{
+	display: block;
+	text-align: justify;
+	line-height: 24px;
+	height: 24px;
+	word-wrap: break-word;
+	overflow: hidden;
+	background: url(images/deshed_03.gif) repeat-x left bottom
+}
+.links li a {
+	padding:0px 0px 0px 15px;
+	float: left;
+	background: url(images/li_icon.gif) no-repeat 5px 10px;
+	color: #666;
+}
+.honorImg{
+	width: 266px;
+	height: 78px;
 }
