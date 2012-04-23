@@ -48,7 +48,6 @@ a{
 	overflow-x:hidden;
 }
 .topMenu ul li {
-	cursor: pointer;
 	float: left;
 	display: inline;
 	margin-left: 55px;
@@ -56,12 +55,6 @@ a{
 	font-weight: bold;
 	font-family: "宋体";
 	color:#FFF;
-}
-.hoverItem {
-	background:url(images/hover_bg.gif) no-repeat center bottom;
-	height: 90%;
-	display: block;
-	overflow: hidden;
 }
 .footer .comment{
 	padding-top:20px;
@@ -101,41 +94,59 @@ a{
 	background:url(images/more.gif) no-repeat center center;
 }
 .news .content{
-	background:url(images/news_bg.gif);
+	background:url(images/news_bg.gif) no-repeat;
 	height:200px;
 }
 .news .content .image{
 	margin-top:10px;
-	margin-left:10px;
+	margin-left:5px;
 	float:left;
-	width:230px;
+	width:250px;
 	height:180px;
 	overflow:hidden;
 	position:relative;
 }
 .news .content .links{
 	margin-top:10px;
-	margin-right:15px;
-	width:430px;
+	margin-right:10px;
+	width:410px;
 	height:180px;
 	float:right;
 }
+
 .news .content .links a{
 	display:block;
 	color:#667;
 	background: url(images/li_icon.gif) no-repeat center left;
-	padding-left:7px;
+	padding-left:15px;
+	background-position-x:3px;
+	line-height:24px;
+	height:24px;
+}
+.news .content .links a:hover{
+	color:#447;
+	text-decoration:underline;
+}
+.news  .content .image img{
+	width:250px;
+	height:180px;
+	position:absolute;
+	left:0;
+	top:0;
 }
 .slideShow{
+	width:700px;
 	height:250px;
 	background:#000;
 	margin-bottom:5px;
 	position:relative;
 	overflow:hidden;
+	border:1px solid #000;
+	margin-top:0;
 }
 .slideShow img{
-	width:100%;
-	height:100%;
+	width:700px;
+	height:250px;
 	position:absolute;
 	left:0;
 	top:0;
@@ -187,30 +198,4 @@ a{
 	margin-top:20px;
 	width: 266px;
 	height: 78px;
-}
-.textArea{
-	padding: 20px 0px 40px 5px;
-}
-.textHeader{
-	background: #EFF3F8 left;
-	float: left;
-	width: 700px;
-	height: 25px;
-	margin-left: 10px;
-}
-.textHeader h3 {
-	color: #0045A5;
-	display: block;
-	font-weight: bold;
-	font-size: 16px;
-	margin: 5px 0px 0px 20px;
-	margin-left: 20px;
-}
-.textContent{
-	margin-top: 40px;
-	margin-left: 20px;
-	font-size: 14px;
-	color: #666;
-	text-align: justify;
-	line-height: 180%;
 }

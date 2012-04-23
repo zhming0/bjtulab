@@ -5,6 +5,8 @@
 				var ss=$('#slideShow');
 				var si=ss.find('img');
 				var hh=ss.height();
+				si.attr('width',ss.width());
+				si.attr('height',si.height());
 				si.css({top:-hh});
 				$(si[0]).css({top:0});
 				si=si.toArray();
@@ -17,6 +19,42 @@
 					$(si[sing]).css({top:-hh});
 					$(si[sing]).animate({top:0},700);
 				},7000);
+				var newsL=$('#newsLinks a');
+				var newsI=$('#newsImages img');
+				var nw=newsI.width();
+				newsI.css({left:nw});
+				var prev=-1;
+				var newsC=newsI.length;
+				var pause=0;
+				var setCurrent=function(num){
+					if(prev==num)
+						return;
+					lasting=700;
+					if(prev!=-1){
+						$(newsI[prev]).stop(true,false);
+						$(newsI[prev]).animate({left:-nw},lasting,'linear');
+						$(newsL[prev]).css({backgroundImage:'url(images/li_icon.gif)',backgroundPositionX:'3px'});
+					}else
+						lasting=0;
+					$(newsI[num]).stop(true,false);
+					$(newsI[num]).css({left:nw});
+					$(newsI[num]).animate({left:0},lasting,'linear');
+					$(newsL[num]).css({backgroundImage:'url(images/arrow.gif)',backgroundPositionX:0});
+					prev=num;
+				}
+				setCurrent(0);
+				setInterval(function(){
+					if(pause)
+						return;
+					next=(prev*1+1)%newsC;
+					setCurrent(next);
+				},5000);
+				newsL.hover(function(){
+					setCurrent($(this).attr('id').substr(5));
+					pause=1;
+				},function(){
+					pause=0;
+				});
 			});
 		</script>
 		<div class = "slideShow" id="slideShow">
@@ -32,19 +70,19 @@
 				<a href=""></a>
 			</div>
 			<div class = "content">
-				<div class = "image">
+				<div class = "image" id="newsImages">
 					<img src="slideShow/1.jpg"/>
 					<img src="slideShow/2.jpg"/>
 					<img src="slideShow/3.png"/>
 					<img src="slideShow/4.png"/>
 					<img src="slideShow/5.jpg"/>
 				</div>
-				<div class = "links">
-					<a href="">xxxxxxxxxx1</a>
-					<a href="">xxxxxxxxxx2</a>
-					<a href="">xxxxxxxxxx3</a>
-					<a href="">xxxxxxxxxx4</a>
-					<a href="">xxxxxxxxxx5</a>
+				<div class = "links" id="newsLinks">
+					<a href="" id="newsL0">xxxxxxxxxx1</a>
+					<a href="" id="newsL1">xxxxxxxxxx2</a>
+					<a href="" id="newsL2">xxxxxxxxxx3</a>
+					<a href="" id="newsL3">xxxxxxxxxx4</a>
+					<a href="" id="newsL4">xxxxxxxxxx5</a>
 				</div>
 			</div>
 		</div>
