@@ -27,3 +27,20 @@ a{
 .footer a{
 	color:#FFF;
 }
+.topMenu{
+	background:url(images/nav_bg.gif);
+	height: 37px;
+	width: 950px;
+}
+.header{
+
+}
+.topMenu ul li {
+	float: left;
+	display: inline;
+	margin-left: 40px;
+	padding-top: 7px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "宋体";
+}
