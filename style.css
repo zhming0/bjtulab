@@ -116,8 +116,8 @@ a{
 .news .content .links a{
 	display:block;
 	color:#667;
-	background: url(images/arrow_02.gif) no-repeat 0 7px;
-	padding-left:15px;
+	background: url(images/li_icon.gif) no-repeat center left;
+	padding-left:7px;
 }
 .slideShow{
 	height:250px;
