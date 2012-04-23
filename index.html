@@ -1,6 +1,30 @@
 <div class = "main">
 	<div class = "leftBar">
-		<div class = "slideShow">
+		<script type="text/javascript">
+			$(function(){
+				var ss=$('#slideShow');
+				var si=ss.find('img');
+				var hh=ss.height();
+				si.css({top:-hh});
+				$(si[0]).css({top:0});
+				si=si.toArray();
+				var count=si.length;
+				var sing=0;
+				$(si[0]).show();
+				setInterval(function(){
+					$(si[sing]).animate({top:hh},700);
+					sing=(sing+1)%count;
+					$(si[sing]).css({top:-hh});
+					$(si[sing]).animate({top:0},700);
+				},7000);
+			});
+		</script>
+		<div class = "slideShow" id="slideShow">
+			<img src="slideShow/1.jpg"/>
+			<img src="slideShow/2.jpg"/>
+			<img src="slideShow/3.png"/>
+			<img src="slideShow/4.png"/>
+			<img src="slideShow/5.jpg"/>
 		</div>
 		<div class = "news">
 			<div class = "title">
@@ -9,8 +33,18 @@
 			</div>
 			<div class = "content">
 				<div class = "image">
+					<img src="slideShow/1.jpg"/>
+					<img src="slideShow/2.jpg"/>
+					<img src="slideShow/3.png"/>
+					<img src="slideShow/4.png"/>
+					<img src="slideShow/5.jpg"/>
 				</div>
 				<div class = "links">
+					<a href="">xxxxxxxxxx1</a>
+					<a href="">xxxxxxxxxx2</a>
+					<a href="">xxxxxxxxxx3</a>
+					<a href="">xxxxxxxxxx4</a>
+					<a href="">xxxxxxxxxx5</a>
 				</div>
 			</div>
 		</div>

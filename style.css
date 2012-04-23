@@ -2,6 +2,10 @@
 body{
 	margin:0;
 	padding:0;
+	background:url(images/bg.gif) repeat-x;
+}
+image{
+	border:0;
 }
 ul{
 	margin:0;
@@ -15,7 +19,9 @@ a{
 }
 .wrap{
 	width:1000px;
+	padding:0 5px;
 	text-align:left;
+	background:#FFF;
 }
 .footer .nav{
 	background:url(images/footer_navbg.gif);
@@ -53,6 +59,9 @@ a{
 	color:#999;
 	font-size:13px;
 }
+.main{
+	margin:5px 0;
+}
 .leftBar{
 	width:700px;
 }
@@ -87,15 +96,35 @@ a{
 	float:left;
 	width:230px;
 	height:180px;
-	background:#000;
+	overflow:hidden;
+	position:relative;
 }
 .news .content .links{
 	margin-top:10px;
-	margin-right:10px;
+	margin-right:15px;
 	width:430px;
 	height:180px;
 	float:right;
+}
+.news .content .links a{
+	display:block;
+	color:#667;
+	background: url(images/arrow_02.gif) no-repeat 0 7px;
+	padding-left:15px;
+}
+.slideShow{
+	height:250px;
 	background:#000;
+	margin-bottom:5px;
+	position:relative;
+	overflow:hidden;
+}
+.slideShow img{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
 }
 .rightBar{
 	background:url(/images/r_bg.gif);
